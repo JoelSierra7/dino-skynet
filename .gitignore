@@ -12,11 +12,29 @@ env/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Data and generated outputs
-data/
-outputs/
-analysis/outputs/
-models/
+# Keep data folder structure, but ignore actual data files
+data/**
+!data/
+!data/**/
+!data/**/.gitkeep
+!data/README.txt
+
+# Keep outputs folder structure, but ignore generated output files
+outputs/**
+!outputs/
+!outputs/**/
+!outputs/**/.gitkeep
+
+analysis/outputs/**
+!analysis/outputs/
+!analysis/outputs/**/
+!analysis/outputs/**/.gitkeep
+
+# Keep models folder structure, but ignore actual model artifacts
+models/**
+!models/
+!models/**/
+!models/**/.gitkeep
 
 # Large/model artifacts
 *.pkl
