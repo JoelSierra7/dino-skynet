@@ -1,0 +1,45 @@
+dinoskynet/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ Dockerfile
+├─ docker-compose.yml        # optional
+├─ requirements.txt / pyproject.toml / environment.yml
+│
+├─ src/
+│  └─ dinoskynet/
+│     ├─ __init__.py
+│     ├─ config/             # YAML/JSON configs
+│     ├─ data_pipeline/      # ETL, feature engineering
+│     ├─ models/             # training + inference code (Python)
+│     ├─ api/                # Flask/FastAPI server
+│     └─ cpp/                # C++ code (bindings, libs, etc.)
+│        ├─ CMakeLists.txt
+│        └─ ...
+│
+├─ notebooks/                # or `analysis/`
+│  ├─ 01_eda.ipynb
+│  ├─ 02_trajectory_sim.ipynb
+│  └─ 03_model_eval.ipynb
+│
+├─ data/
+│  ├─ raw/                   # untouched downloads (OpenSky, etc.)
+│  ├─ external/              # any extra reference data
+│  └─ processed/             # train/val/test, features
+│
+├─ models/
+│  ├─ checkpoints/           # trained weights
+│  └─ exports/               # ONNX / TorchScript, etc.
+│
+├─ docs/
+│  ├─ slides/                # ✅ your PPT goes here
+│  │  └─ dinoskynet_architecture_v1.pptx
+│  └─ design/                # diagrams, markdown specs
+│
+├─ scripts/
+│  ├─ fetch_data.py / .sh
+│  ├─ train_model.sh
+│  └─ run_server.sh
+│
+└─ tests/
+   └─ test_*.py              # unit tests for src/dinoskynet

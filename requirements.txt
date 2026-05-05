@@ -1,0 +1,31 @@
+# Web service (optional later – keep lightweight for now)
+Flask
+
+# Data processing and storage
+pandas
+pyarrow
+numpy
+scipy
+
+# Visualization (notebooks / evaluation)
+matplotlib
+seaborn
+
+# Machine learning
+scikit-learn==1.6.1
+imbalanced-learn
+joblib
+
+# Embeddings / similarity search
+faiss-cpu
+
+# Configuration / environment
+python-dotenv
+pyyaml
+
+# Progress + logging helpers
+tqdm
+
+# Notebook support (enabled in Docker CMD)
+jupyterlab
+ipykernel
